@@ -1,5 +1,6 @@
 package ai.iamneo.springapp.service;
 
+import java.util.*;
 import ai.iamneo.springapp.entity.User;
 
 public interface UserService {
