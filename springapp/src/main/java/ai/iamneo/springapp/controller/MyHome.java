@@ -1,14 +1,23 @@
 package ai.iamneo.springapp.controller;
 
-import org.springframework.web.bind.annotation.RestController;  
-import org.springframework.web.bind.annotation.RequestMapping; 
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MyHome {
-    @RequestMapping("/")  
+    @GetMapping("/")  
 	public String hello() {  
 		return "Hello javaTpoint";  
-	}  
+	}
+
+    @GetMapping("/login")  
+	public boolean login() {  
+		return true;  
+	}
+
+    @GetMapping("/signup")  
+	public boolean signup() {  
+		return true;  
+	}
 
     
 }
