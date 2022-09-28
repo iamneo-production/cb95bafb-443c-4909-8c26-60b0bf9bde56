@@ -1,7 +1,15 @@
 package ai.iamneo.springapp.entity;
 
+import java.lang.annotation.Inherited;
+import javax.persistence.*;
+
+@Entity
+@Table(name = "product")
 public class Product {
-    private String productId;
+    @Id
+    @GeneratedValue
+    private int productId;
+
     private String imageUrl;
     private String productName;
     private String price;
@@ -10,7 +18,7 @@ public class Product {
     
     public Product() {}
 
-    public Product(String productId, String imageUrl, String productName, String price, String description,
+    public Product(int productId, String imageUrl, String productName, String price, String description,
             String quantity) {
         this.productId = productId;
         this.imageUrl = imageUrl;
@@ -20,11 +28,11 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public String getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 
