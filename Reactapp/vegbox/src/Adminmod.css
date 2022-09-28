@@ -1,0 +1,55 @@
+.Adminmod{
+    text-align:center;
+    
+    height:150vh;
+    background:url("https://images6.alphacoders.com/383/thumbbig-383146.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top:-22px;
+    color:white;
+}
+.add-Product{
+    background:rgba(255,255,255,0.2);
+    border:1px solid black;
+    font-size:25px;
+    width:400px;
+    margin:auto;
+    height:400px;
+    padding:auto;
+    align-items:center;
+    justify-items: center;
+}
+.he{
+    color:violet;
+}
+.rem-Product{
+    background:rgba(255,255,255,0.2);
+    border:1px solid silver;
+    font-size:25px;
+    width:400px;
+    height:150px;
+    padding:20px;
+    margin:auto;
+}
+.Adminmod input{
+    width:300px;
+    margin:10px;
+    height:40px;
+    font-size:30px;
+    border-radius: 5px;
+
+}
+.dhello{
+    margin:auto;
+    margin-top:50px;
+    /* border:2px solid red; */
+}
+.Adminmod button{
+    background:orange;
+    /* height:30px; */
+    width:200px;
+    font-size: 30px;
+}
+.er{
+    color:orange;
+}

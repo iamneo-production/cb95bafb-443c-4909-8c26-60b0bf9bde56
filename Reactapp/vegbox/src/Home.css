@@ -1,0 +1,40 @@
+.home{
+    display:flex;
+    flex-direction:column;
+}
+#jj{
+    text-align:center;
+    border:1px solid black;
+    background:orange;
+    padding:5px;
+    text-decoration: none;
+  }
+.prod{
+    display:flex;
+    flex-direction: column;
+}
+.prod1,.prod2{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+.filters{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.filters input{
+    height:30px;
+    width:300px;
+    margin:10px;
+}
+.just{
+    text-align:center;
+}
+.item{
+    width:100%;
+    margin:20px;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+}
