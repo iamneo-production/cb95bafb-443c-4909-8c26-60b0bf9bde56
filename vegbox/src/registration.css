@@ -1,0 +1,150 @@
+.container{
+    width : 100vw;
+    height : 100vh;
+    font-family : 'Poppins',sans;
+}
+
+.heading{
+    color : white;
+    background-color:indigo;
+    text-align: center;
+    padding : 0.2em 0em;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+.flex-col{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-2{
+    color : indigo;
+    text-align: center;
+    padding : 0.2em 0em;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+.regis-box{
+    width : 40%;
+    height : 100%;
+    /* border : 2px red solid; */
+}
+
+.input-field{
+    width : 17em;
+    height : 2em;
+    background-image : linear-gradient(45deg,white 1%,rgb(73, 45, 226) 99%); 
+    border-radius : 3px;
+    border : 2px solid rgb(98, 15, 177);
+    padding : 0.9em 0.7em;
+    font-size : 25px;
+    font-weight : bold;
+}
+
+.input-field::placeholder{
+    color : black;
+    font-weight:bold;
+}
+
+.error-info{
+    color : red;
+    font-size: 13px;
+    margin : 0px;
+}
+
+.mb-1{
+    margin-bottom : 0.2em;
+}
+
+.mr-2{
+    margin : 2em;
+}
+
+.mr-3{
+    margin : 3em;
+}
+
+.mr-4{
+    margin : 4em;
+}
+
+.pd-1{
+    padding : 1em;
+}
+
+.pd-2{
+    padding : 2em;
+}
+
+.pd-3{
+    padding : 3em;
+}
+
+.pd-4{
+    padding : 4em;
+}
+
+.info-link{
+    color : black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.signIn-link{
+    font-size: 22px;
+    color : rgb(117, 19, 186);
+}
+
+.signIn-link a{
+    cursor : pointer;
+}
+
+.btn-indigo{
+    background-color: rgb(117, 19, 186);
+    border : 2px solid rgb(98, 15, 177);
+    border-radius : 2px;
+    font-size : 25px;
+    padding : 0.2em 1em;
+    color : white;
+    width : 5em;
+    cursor : pointer;
+} 
+
+.btn-indigo:hover{
+    transform : scale(0.9,0.9);
+    transition : 0.5s transform;
+}
+
+.img-box{
+    width : 60%;
+    height : 100%;
+    padding : 5em 1em;
+    /* border : 2px solid blue; */
+}
+
+.img{
+    border-radius : 10px;
+    transition : 0.7s transform, 0.5s box-shadow;
+}
+
+.img:hover{
+    transition-timing-function: linear;
+    transform : scale(1.05,1.05);
+    box-shadow: 0px 0px 10px 5px rgb(98, 15, 177);
+}
+
+.alert-style{
+    margin-top : 0.5em;
+    color : red;
+}
