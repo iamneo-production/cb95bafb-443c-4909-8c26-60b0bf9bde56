@@ -1,0 +1,23 @@
+.nav{
+    height:60px;
+    display:flex;
+    flex-direction:row;
+    background:black;
+    color:white;
+}
+.nv{
+    margin:auto;
+    padding:20px;
+    text-decoration:none;
+    color:white;
+}
+.navbar-cart{
+    display:flex;
+    margin:auto;
+    padding:-3px;
+}
+.nv:hover{
+    background:orange;
+    /* height:100px; */
+    border-radius:15px;
+}
