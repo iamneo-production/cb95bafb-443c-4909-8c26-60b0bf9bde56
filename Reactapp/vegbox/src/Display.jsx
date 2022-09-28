@@ -20,7 +20,7 @@ const Display = () => {
           </div>
         );
       })}
-      <a id="jj" href="/order">Place Order</a>
+      <a id="jk" href="/order">Place Order</a>
     </div>
   );
 };
