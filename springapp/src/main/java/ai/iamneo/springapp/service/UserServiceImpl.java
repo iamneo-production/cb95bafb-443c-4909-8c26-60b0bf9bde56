@@ -23,8 +23,7 @@ public class UserServiceImpl implements UserService {
         return this.userRepository.save(u);
     }
     public User getUserById(Integer userId) {
-        User user = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User"," Id ", userId));
-        return user;
+        return this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User"," Id ", userId));
     }
     public List<User> getAllUsers() {
         return this.userRepository.findAll();
@@ -32,5 +31,9 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(Integer userId) {
         User user = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User"," Id ", userId));
         this.userRepository.delete(user);
+    }
+    public boolean getUserByEmail(User user) {
+        User currentUser = this.userRepository.findByEmail(user.getEmail());
+        return (currentUser != null);
     }
 }

@@ -10,16 +10,20 @@ import java.util.*;
 @RestController
 public class HomeController {
     
+	@Autowired
+	private UserService userService;
+
     @GetMapping("/")  
 	public String hello() {  
 		return "Hello";  
 	}
     @PostMapping("/login")  
-	public boolean login() {  
-		return true;  
+	public boolean login(@RequestBody User user) {  
+		return this.userService.getUserByEmail(user);  
 	}
     @PostMapping("/signup")  
-	public boolean signup() {  
-		return true;  
+	public boolean signup(@RequestBody User user) {  
+		User currentUser = this.userService.createUser(user);
+		return (currentUser!=null); 
 	}
 }

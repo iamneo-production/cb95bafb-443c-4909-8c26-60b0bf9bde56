@@ -1,20 +1,24 @@
 package ai.iamneo.springapp.entity;
 
 import java.lang.annotation.Inherited;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "user")
 public class User {
     
+    public User() {}
+
+    public User(String email, String username, String productNumber, String password) {
+        this.email = email;
+        this.username = username;
+        this.productNumber = productNumber;
+        this.password = password;
+    }
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    int id;
+    @GeneratedValue
+    private int id;
     
     private String email;
     private String username;

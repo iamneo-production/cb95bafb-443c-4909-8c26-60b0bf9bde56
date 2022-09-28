@@ -1,6 +1,7 @@
 package ai.iamneo.springapp.controller;
 
 import ai.iamneo.springapp.service.UserService;
+import ai.iamneo.springapp.repository.UserRepository;
 import ai.iamneo.springapp.entity.User;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +14,13 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
+	@Autowired
+	private UserRepository userRepo;
+
 	// POST - create user
 	@PostMapping("/users")
     public User newUser(@RequestBody User user) {
-		return this.userService.createUser(user);
+		return this.userRepo.save(user);
 	}
 
 	// PUT - update user
