@@ -14,9 +14,9 @@ const Product=({id,img,title,price,quantity})=>{
             <div className="card-image">
             <img src={img} alt="ji" id="ok"></img>
             </div>
-            <div className="card-title">{title}</div>
-            <div className="card-price">{price}</div>
-            <div className="card-quantity">{quantity}</div>
+            <div className="card-title">Name:  {title}</div>
+            <div className="card-price">Price:  {price}</div>
+            <div className="card-quantity">Quantity:  {quantity}</div>
             <div className="card-submit"><button onClick={act}>Add to Cart</button></div>
         </div>
 

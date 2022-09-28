@@ -9,7 +9,7 @@ const Result = ({ title, image, price, quantity }) => {
         <img src={image}></img>
       </div>
       <div className="rem">
-        <span className="ok1">TYPE:{title}</span>
+        <span className="ok1">{title}</span>
         <span className="ok2">PRICE:{price}</span>
         <span className="ok2">QTY:{quantity}</span>
       </div>

@@ -3,9 +3,9 @@
     position: relative;
     min-width: 60px;
     max-height: 350px;
-    font-size: 30px;
+    font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height:330px;
+    min-height:390px;
     margin: 10px;
     width: 100%;
     z-index: 1;
@@ -22,10 +22,12 @@
   border:none;
   padding:10px;
   cursor:pointer;
+  margin-top:20px;
 }
 #ok{
-    height:150px;
-    width:100px;
+    height:180px;
+    width:280px;
+    margin-top:20px;
 }
 .kk {
     position: relative;

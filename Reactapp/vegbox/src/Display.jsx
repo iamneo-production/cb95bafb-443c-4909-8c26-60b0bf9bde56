@@ -20,7 +20,9 @@ const Display = () => {
           </div>
         );
       })}
+      <div className="jkjk">
       <a id="jk" href="/order">Place Order</a>
+      </div>
     </div>
   );
 };

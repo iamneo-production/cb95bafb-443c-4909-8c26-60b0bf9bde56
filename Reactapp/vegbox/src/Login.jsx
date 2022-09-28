@@ -3,8 +3,20 @@ import './Login.css'
 function Login() {
     
     const [email, setEmail] = useState('');
+    const [val,setVal]=useState(false);
     const [password, setPassword] = useState('');
-
+    const check=()=>{
+        if (email=="" && password=="") alert("Please fill the required details");
+        else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+            if (val===true) setVal(false);
+            else setVal(true);
+            return (true);
+        }
+        else if (password.length<8) alert('Password contain min 8 charcters');
+        else
+        alert("You have entered an invalid email address !");
+        return (false);
+    }
     return (
         <div className='main'>
         <div className="out">
@@ -16,12 +28,12 @@ function Login() {
 
                 <form>
                     <h5>E-mail</h5>
-                    <input type='text' value={email} onChange={e => setEmail(e.target.value)} />
+                    <input type='text' value={email} onChange={e => setEmail(e.target.value)} required/>
 
                     <h5>Password</h5>
-                    <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
+                    <input type='password' value={password} onChange={e => setPassword(e.target.value)} required/>
 
-                    <a id="jj" href="/">Sign In</a>
+                    <a id="jj" onClick={check} href={val?"/":"/login"}>Sign In</a>
                 </form>
 
                 <p>
