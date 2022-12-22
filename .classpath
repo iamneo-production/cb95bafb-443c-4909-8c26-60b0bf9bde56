@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> E-Commerce-Veg-Box-ganesh4990
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 >>>>>>> 5b354f85ef8a96faf42831e126c1befdf224aa8e
+=======
+>>>>>>> E-Commerce-Veg-Box-ganesh4990
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -17,10 +23,14 @@
 		</attributes>
 	</classpathentry>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
 =======
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 >>>>>>> 5b354f85ef8a96faf42831e126c1befdf224aa8e
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+>>>>>>> E-Commerce-Veg-Box-ganesh4990
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -39,6 +49,7 @@
 		</attributes>
 	</classpathentry>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<classpathentry kind="src" output="target/classes" path="workspace/springapp/src/main/java/com/examly/springapp">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -47,6 +58,8 @@
 	</classpathentry>
 =======
 >>>>>>> 5b354f85ef8a96faf42831e126c1befdf224aa8e
+=======
+>>>>>>> E-Commerce-Veg-Box-ganesh4990
 	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
 		<attributes>
 			<attribute name="optional" value="true"/>
